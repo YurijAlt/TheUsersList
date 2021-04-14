@@ -33,7 +33,7 @@ class UsersListViewController: UITableViewController {
       
         let user = usersList[indexPath.row]
         var content = cell.defaultContentConfiguration()
-        content.text = user.fullname
+        content.text = user.fullname+" \(user.phone)"
         cell.contentConfiguration = content
         return cell
     }

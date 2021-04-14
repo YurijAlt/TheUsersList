@@ -60,35 +60,22 @@ class Person {
     ]
 
     func getRandomName() -> String {
-        var name = ""
-        if names.count > 0 {
-            name = names.removeFirst()
-        }
+        let name = names.randomElement() ?? ""
         return name
     }
     
     func getRandomSurname() -> String {
-        var surname = ""
-        if surnames.count > 0 {
-            surname = surnames.removeFirst()
-        }
+        let surname = surnames.randomElement() ?? ""
         return surname
     }
     
-    
     func getRandomPhoneNumber() -> String {
-        var phoneNumber = ""
-        if phoneNumbers.count > 0 {
-            phoneNumber = phoneNumbers.removeFirst()
-        }
+        let phoneNumber = phoneNumbers.randomElement() ?? ""
         return phoneNumber
     }
     
     func getRandomEmail() -> String {
-        var email = ""
-        if emails.count > 0 {
-            email = emails.removeFirst()
-        }
+        let email = emails.randomElement() ?? ""
         return email
     }
     
