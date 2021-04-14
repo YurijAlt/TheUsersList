@@ -39,6 +39,4 @@ class UsersListWithDetailsViewController: UITableViewController {
         detailsVC.user = person
     }
     
-    // MARK: - Table View delegate
-    
 }

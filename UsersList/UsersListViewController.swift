@@ -7,11 +7,8 @@
 
 import UIKit
 
-
-
 class UsersListViewController: UITableViewController {
 
-    //private let usersList = User.getUsersList()
     var user: User!
     var usersList = User.getUsersList()
     
@@ -30,7 +27,6 @@ class UsersListViewController: UITableViewController {
         
         return usersList.count
     }
-
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cellPhone", for: indexPath)
@@ -42,13 +38,10 @@ class UsersListViewController: UITableViewController {
         return cell
     }
     
-    
     // MARK: - Table View Delegate
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
     }
-    
-    
     
 }
