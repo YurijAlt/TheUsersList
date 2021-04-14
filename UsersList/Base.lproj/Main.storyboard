@@ -40,7 +40,7 @@
             </objects>
             <point key="canvasLocation" x="2773.913043478261" y="-879.24107142857144"/>
         </scene>
-        <!--Root View Controller-->
+        <!--Users List With Data-->
         <scene sceneID="UG6-UP-edu">
             <objects>
                 <tableViewController id="OlF-6d-waF" customClass="UsersListViewController" customModule="UsersList" customModuleProvider="target" sceneMemberID="viewController">
@@ -49,7 +49,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellList" id="UgI-S5-jp1">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellPhone" id="UgI-S5-jp1">
                                 <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="UgI-S5-jp1" id="LlU-XZ-sI0">
@@ -63,7 +63,7 @@
                             <outlet property="delegate" destination="OlF-6d-waF" id="015-q4-Z8h"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="RZw-e7-w8v"/>
+                    <navigationItem key="navigationItem" title="Users List With Data" id="RZw-e7-w8v"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tv9-yx-daH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -72,7 +72,7 @@
         <!--Details View Controller-->
         <scene sceneID="8W8-xp-iPg">
             <objects>
-                <viewController id="AbT-Rf-noM" customClass="DetailsViewController" customModule="UsersList" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController hidesBottomBarWhenPushed="YES" id="AbT-Rf-noM" customClass="DetailsViewController" customModule="UsersList" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Rg9-tl-jA1">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -97,9 +97,12 @@
                             <constraint firstItem="uq3-WE-PVx" firstAttribute="top" secondItem="uxB-YR-kl4" secondAttribute="bottom" constant="21" id="Gzz-dd-6wV"/>
                             <constraint firstItem="uxB-YR-kl4" firstAttribute="leading" secondItem="8UL-gE-Hp6" secondAttribute="leading" constant="20" id="J2w-BB-zmP"/>
                             <constraint firstItem="uq3-WE-PVx" firstAttribute="leading" secondItem="8UL-gE-Hp6" secondAttribute="leading" constant="20" id="bTg-HH-CLR"/>
+                            <constraint firstItem="8UL-gE-Hp6" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="uxB-YR-kl4" secondAttribute="trailing" constant="345.5" id="juP-9f-Klw"/>
+                            <constraint firstItem="8UL-gE-Hp6" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="uq3-WE-PVx" secondAttribute="trailing" constant="353" id="oaj-eu-TtH"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="3V3-4R-99R"/>
+                    <nil key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="emailLabel" destination="uq3-WE-PVx" id="Zrr-8B-tJx"/>
                         <outlet property="phoneNumberLabel" destination="uxB-YR-kl4" id="C9b-x5-Z07"/>

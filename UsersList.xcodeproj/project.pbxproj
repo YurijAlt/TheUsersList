@@ -17,6 +17,7 @@
 		C483EEDE26261E330051A8A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C483EEDC26261E330051A8A2 /* Main.storyboard */; };
 		C483EEE026261E330051A8A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C483EEDF26261E330051A8A2 /* Assets.xcassets */; };
 		C483EEE326261E330051A8A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C483EEE126261E330051A8A2 /* LaunchScreen.storyboard */; };
+		C48F14AD2627A80A00AA6768 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48F14AC2627A80A00AA6768 /* MainTabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		C483EEDF26261E330051A8A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C483EEE226261E330051A8A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C483EEE426261E330051A8A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C48F14AC2627A80A00AA6768 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				C483EEDC26261E330051A8A2 /* Main.storyboard */,
 				C437900A262736F80086D391 /* Models.swift */,
 				C437900F26275C530086D391 /* Service.swift */,
+				C48F14AC2627A80A00AA6768 /* MainTabBarController.swift */,
 				C4379003262734AA0086D391 /* UsersListWithDetailsViewController.swift */,
 				C4379000262734760086D391 /* UsersListViewController.swift */,
 				C4379006262734DA0086D391 /* DetailsViewController.swift */,
@@ -151,6 +154,7 @@
 			files = (
 				C483EED726261E330051A8A2 /* AppDelegate.swift in Sources */,
 				C437901026275C530086D391 /* Service.swift in Sources */,
+				C48F14AD2627A80A00AA6768 /* MainTabBarController.swift in Sources */,
 				C483EED926261E330051A8A2 /* SceneDelegate.swift in Sources */,
 				C4379004262734AA0086D391 /* UsersListWithDetailsViewController.swift in Sources */,
 				C437900B262736F80086D391 /* Models.swift in Sources */,
