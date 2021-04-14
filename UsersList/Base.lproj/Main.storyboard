@@ -25,7 +25,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="gf2-qL-vEL" kind="show" id="RWd-fA-KTY"/>
+                                    <segue destination="AbT-Rf-noM" kind="show" id="ShB-1b-qtS"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -70,20 +70,44 @@
             <point key="canvasLocation" x="2773.913043478261" y="-126.5625"/>
         </scene>
         <!--Details View Controller-->
-        <scene sceneID="m7x-VA-4wD">
+        <scene sceneID="8W8-xp-iPg">
             <objects>
-                <viewController id="gf2-qL-vEL" customClass="DetailsViewController" customModule="UsersList" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="qzO-4p-XTn">
+                <viewController id="AbT-Rf-noM" customClass="DetailsViewController" customModule="UsersList" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Rg9-tl-jA1">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="XI8-R8-Fhe"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uq3-WE-PVx">
+                                <rect key="frame" x="20" y="180" width="41" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uxB-YR-kl4">
+                                <rect key="frame" x="20" y="138" width="48.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="8UL-gE-Hp6"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="uxB-YR-kl4" firstAttribute="top" secondItem="8UL-gE-Hp6" secondAttribute="top" constant="50" id="2tE-Ys-gbI"/>
+                            <constraint firstItem="uq3-WE-PVx" firstAttribute="top" secondItem="uxB-YR-kl4" secondAttribute="bottom" constant="21" id="Gzz-dd-6wV"/>
+                            <constraint firstItem="uxB-YR-kl4" firstAttribute="leading" secondItem="8UL-gE-Hp6" secondAttribute="leading" constant="20" id="J2w-BB-zmP"/>
+                            <constraint firstItem="uq3-WE-PVx" firstAttribute="leading" secondItem="8UL-gE-Hp6" secondAttribute="leading" constant="20" id="bTg-HH-CLR"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="jNt-br-d0s"/>
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="3V3-4R-99R"/>
+                    <connections>
+                        <outlet property="emailLabel" destination="uq3-WE-PVx" id="Zrr-8B-tJx"/>
+                        <outlet property="phoneNumberLabel" destination="uxB-YR-kl4" id="C9b-x5-Z07"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="eyw-mR-JSw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jT8-JX-bOX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3673.913043478261" y="-879.24107142857144"/>
+            <point key="canvasLocation" x="3677" y="-879"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="CZj-aH-yhZ">
